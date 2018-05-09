@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>照片墙</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		body{background: #f8f8f8;}
+		h2{text-align: center;}
+		.contain{width:980px;height:450px;margin:20px auto;position: relative;}
+		img{padding:10px 10px 10px 10px;background:#fff;border:1px solid #ddd;position: absolute;z-index: 1;}
+		.pic1{left:50px;top:0;transform:rotate(24deg);--webkit-transform: rotate(24deg);--moz-transform: rotate(24deg);}
+		.pic7{left:500px;top:56px;transform:rotate(30deg);--webkit-transform: rotate(30deg);--moz-transform: rotate(24deg);}
+		.pic2{left:670px;top:100px;transform:rotate(40deg);--webkit-transform: rotate(40deg);--moz-transform: rotate(24deg);}
+		.pic3{left:300px;top:340px;transform:rotate(50deg);--webkit-transform: rotate(50deg);--moz-transform: rotate(24deg);}
+		.pic4{right:50px;bottom:0;transform:rotate(24deg);--webkit-transform: rotate(24deg);--moz-transform: rotate(24deg);}
+		.pic5{right:120px;bottom:100px;transform:rotate(24deg);--webkit-transform: rotate(24deg);--moz-transform: rotate(24deg);}
+		.pic6{left:200px;bottom:30px;transform:rotate(24deg);--webkit-transform: rotate(24deg);--moz-transform: rotate(24deg);}
+		.pic8{right:89px;bottom:80px;transform:rotate(24deg);--webkit-transform: rotate(24deg);--moz-transform: rotate(24deg);}
+		.pic9{right:220px;bottom:100px;transform:rotate(24deg);--webkit-transform: rotate(24deg);--moz-transform: rotate(24deg);}
+		.pic10{left:240px;bottom:0;transform:rotate(24deg);--webkit-transform: rotate(24deg);--moz-transform: rotate(24deg);}
+		img:hover{
+			transform: rotate(34deg);
+			-webkit-transform:rotate(34deg);
+			transform: scale(1.2);
+			-webkit-transform:scale(1.2);
+			transition:.2s;
+			-webkit-transition:.2s;
+			z-index: 2;
+			box-shadow: 3px 3px 5px #333;
+		}
+	</style>
+</head>
+<body>
+	<h2>css3照片墙</h2>
+	<div class="contain">
+	<img src="images/mm1.jpg" class="pic1">
+	<img src="images/mm10.jpg" class="pic2">
+	<img src="images/mm2.jpg" class="pic3">
+	<img src="images/mm3.jpg" class="pic4">
+	<img src="images/mm4.jpg" class="pic5">
+	<img src="images/mm5.jpg" class="pic6">
+	<img src="images/mm6.jpg" class="pic7">
+	<img src="images/mm7.jpg" class="pic8">
+	<img src="images/mm8.jpg" class="pic9">
+	<img src="images/mm9.jpg" class="pic10">
+	</div>
+</body>
+</html>

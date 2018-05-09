@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css实现正圆运动</title>
+	<style type="text/css">
+		.dome, .img, .mask, .border{
+			width:300px;
+			height:300px;
+			border-radius: 50%;
+		}
+		.dome{
+			display: block;
+			position: relative;
+		}
+		.img{
+			background: url(images/1.jpg) no-repeat;
+			background-size:cover;
+			background-position: center;
+		}
+		.mask,.border{
+			position:absolute;
+			left:0;
+			top:0;
+			-webkit-transition:all .5s ease-in;
+			-moz-transition:all .5s ease-in;
+			-o-transition:all .5s ease-in;
+			-ms-transition:all .5s ease-in;
+		}
+		.mask{
+			text-align:center;
+			color:rgba(255,255,255,0);
+			transition:all .5s ease-in;
+
+		}
+		.mask .info{
+			margin-top:50%;
+			transform: translateY(-50%);
+		}
+		.border{
+			border:10px solid #ccc;
+			border-left-color:#d3a2ea;
+			border-bottom-color:pink;
+			border-top-color:#d3a2ea;
+			border-right-color: pink;
+			box-sizing:border-box;
+		}
+		.dome:hover .mask{
+			background:rgba(0,0,0,.5);
+			color:rgba(255,255,255,1);
+		}
+		.dome:hover .border{
+			transform: rotate(180deg);
+			-webkit-transform: rotate(180deg);
+			-moz-transform:rotate(180deg);
+			-moz-transform:rotate(180deg);
+			-ms-transform:rotate(180deg);
+		}
+	</style>
+</head>
+<body>
+	<a href="" class="dome">
+		<div class="img"></div>
+		<div class="mask">
+			<div class="info">
+				<h3>bliest day</h3>
+				<p>befriend are us</p>
+			</div>
+		</div>
+		<div class="border"></div>
+	</a>
+</body>
+</html>
