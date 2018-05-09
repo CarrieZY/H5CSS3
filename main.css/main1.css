@@ -1,0 +1,97 @@
+/*
+* @Author: Administrator
+* @Date:   2018-04-15 22:07:55
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-04-16 10:20:19
+*/
+ul li{
+	margin:0;padding:0;
+	list-style:none;
+}
+.warp{
+	width:800px;
+	height:350px;
+	border:1px solid #ccc;
+	margin:0 auto;
+	text-align: center;
+	background:#fff;}
+.efect{
+	position:relative;
+	box-shadow: 0 0 20px rgba(0,0,0,.3) inset;
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,.3) inset;
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,.3) inset;
+	-o-box-shadow:0 0 20px rgba(0,0,0,.3) inset;
+}
+.efect:before,.efect:after{
+	content:'';
+	position: absolute;
+	z-index:-1;
+	left:10px;
+	top:50%;
+	right:10px;
+	bottom:-1px;
+	background:#fff;
+	box-shadow: 0 0 30px rgba(0,0,0,.4);
+	-webkit-box-shadow:0 0 30px rgba(0,0,0,.4);
+	-moz-box-shadow:0 0 30px rgba(0,0,0,.4);
+   	-o-box-shadow:0 0 30px rgba(0,0,0,.4);
+   	border-radius: 100px/10px;
+}
+.box{
+    width:980px;
+    height:auto;
+    margin:0 auto;
+    clear:both;
+    overflow: hidden;
+}
+.box li{
+	width:300px;
+	height:220px;
+	margin:20px 10px;
+	float:left;
+	border:2px solid #efefef;
+	background:#fff;
+    position:relative;
+    text-align:center;
+    line-height:220px;
+    font-size:30px;
+    box-shadow:0 1px 4px rgba(0,0,0,0.3)
+}
+.box li img{
+	margin:5px;
+	width:290px;
+	height:210px;
+	display: block;
+}
+.box li:after{
+	content: '';
+	position: absolute;
+	height:90%;
+	width:80%;
+	right:20px;
+	bottom:8px;
+	background:#fff;
+	transform:skew(12deg) rotate(4deg);
+	-webkit-transform:skew(12deg) rotate(4deg);
+	-moz-transform:skew(12deg) rotate(4deg);
+	-o-transform:skew(12deg) rotate(4deg);
+	box-shadow:0 10px 20px rgba(0,0,0,.4);
+	-webkit-box-shadow:0 10px 20px rgba(0,0,0, .4);
+	z-index:-1;
+}
+.box li:before{
+	content: '';
+	position: absolute;
+	height:90%;
+	width:80%;
+	left:20px;
+	bottom:8px;
+	background:#fff;
+	transform:skew(-12deg) rotate(-4deg);
+	-webkit-transform:skew(-12deg) rotate(-4deg);
+	-moz-transform:skew(-12deg) rotate(-4deg);
+	-o-transform:skew(-12deg) rotate(-4deg);
+	box-shadow:0 10px 20px rgba(0,0,0,.4);
+	-webkit-box-shadow:0 10px 20px rgba(0,0,0, .4);
+	z-index:-1;
+}

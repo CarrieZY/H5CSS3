@@ -1,0 +1,274 @@
+/*
+* @Author: Administrator
+* @Date:   2018-04-12 17:41:20
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-04-13 22:33:28
+*/
+html, body{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+ul,ol,li {
+    list-style-type: none
+}
+ul{
+	margin:0;
+}
+div{
+	display: block;
+}
+a {
+    color: #666;
+    text-decoration: none;
+    outline: 0
+}
+a:hover {
+    text-decoration: none
+}
+.clearfix::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+nav{
+	background: transparent;
+	height:50px;
+}
+#banner{
+	background:transparent;
+	height:700px;
+}
+nav ul{
+list-style-type: none;
+margin:0;
+float:right;
+}
+nav ul li,nav .logo{
+display: inline-block;
+line-height:50px;
+margin-right:20px;
+}
+nav ul li a{
+	line-height:inherit;
+	display: inline-block;
+	height:inherit;
+	color:#fff;
+}
+header{
+	background:rgba(0,0,0,.3);
+}
+#banner .inner{
+	max-width:300px;
+	text-align: center;
+	margin: 0 auto;
+	position:relative;
+	top:160px;
+	color:#fff;
+}
+#banner .inner h1{
+	margin:0;
+}
+button{
+	border:none;
+	background:#333;
+	color:#eee;
+	padding:10px;
+}
+#banner .inner .more{
+	margin-top:320px;
+}
+.sub-heading{
+	line-height: 30px;
+	margin:30px;
+}
+.more a{
+	display: block;
+	color:#fff;
+}
+.logo{
+	font-size: 20px;
+	letter-spacing:1px;
+	font-weight:700;
+	padding-left:20px;
+}
+.sub-heading{
+	font-size:18px;
+	margin:20px 0;
+}
+.logo a{color:#fff;}
+#main-btn{
+padding:14px 28px;
+font-size:20px;
+letter-spacing: 4px;
+border-radius: 6px;
+background:#18a;
+}
+h2{
+	font-size:30px;
+}
+h3{
+	font-size: 24px;
+}
+.hr{
+	height:2px;
+	width:100%;
+	margin:20px auto;
+}
+.green-section{
+	text-align: center;
+	background:#089089;
+	color:#fff;
+	padding:100px 0;
+}
+.green-section .hr{
+	background:#078494;
+	width:60%;
+}
+.green-section .icon-group .icon{
+	display: inline-block;
+	width: 80px;
+	height:80px;
+	border:4px solid #0d6f7c;
+	-webkit-transform:rotate(45deg);
+	transform: rotate(45deg);
+	margin:20px;
+}
+.icon i{
+	padding-top:30px;
+	-webkit-transform:rotate(-45deg);
+	margin-right: 23px;
+}
+.wrapper{
+	max-width:1080px;
+	margin:0  auto;
+}
+.gray-section{
+	background:#252f34;
+	color:#fff;
+	overflow: hidden;
+}
+.gray-section .img-section{
+	width: 45%;
+}
+.img-section img{
+	width:100%;
+}
+.gray-section .text-section{
+	width:55%;
+	
+}
+
+.article-preview > div{
+	float:left;
+	font-size:0;
+}
+/*清除父元素的浮动*/
+.article-preview::after{
+	content:'';
+	display: block;
+	clear:both;
+}
+.text-section{
+	position: relative;
+	top:68px;
+	left:50px;
+}
+.text-section h2{
+	margin-bottom: 20px;
+}
+.text-section p{
+	font-size:18px;
+	letter-spacing: 1px;
+}
+
+.text-section .sub-heading{
+	font-size:22px;
+	margin-top:0;
+}
+.text-section > *{
+	max-width:90%;
+}
+.article-preview:nth-child(odd){
+	background:rgba(255,255,255,.3);
+}
+.purple-section{
+	background: #523f7d;
+    color: #fff;
+    
+}
+.purple-section .heading-warping{
+	padding:80px;
+	text-align: center;
+}
+.purple-section .hr{
+	background:#927dd0;
+	width:60%;
+}
+.card{
+	float:left;
+	width:50%;
+	min-height:400px;
+	padding:50px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
+.card h3{
+	display: block;
+	text-align: left;
+}
+.card p{
+	font-size:18px;
+	letter-spacing: 1px;
+}
+.card:first-child{
+    background:rgba(0,0,0,.1);
+}
+.card:nth-child(2){
+	 background:rgba(0,0,0,.15);
+}
+.card:nth-child(3){
+	 background:rgba(0,0,0,.2);
+}
+.card:nth-child(4){
+	 background:rgba(0,0,0,.25);
+}
+.card:nth-child(5){
+	 background:rgba(0,0,0,.3);
+}
+.card:nth-child(6){
+	 background:rgba(0,0,0,.35);
+}
+footer{
+	background:#333;
+	color:#fff;
+	min-height:200px;
+	text-align: center;
+}
+ul.share-group{
+	display: block;
+	width:1080px;
+	margin:0 auto;
+	padding:50px;
+}
+.share-group li{
+	display: inline-block;
+	padding:10px;
+}
+.copy{
+	padding-bottom: 20px;
+}
+.main-warpper{
+	background:url(../images/banner.jpg);
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center center;	
+}
